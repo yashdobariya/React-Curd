@@ -3,23 +3,23 @@ import React from 'react'
 export default function CheckboxInput() {
     return (
         <div>
-            <div class="">
-						<label class="">Car Features List</label>
-						<label class="">
+            <div className="form-item">
+						<label className="">Car Features List</label>
+						<label className="ml mt">
 							<input
 								type="checkbox"
 								name=""
 								id=""
 								na
-								class=""
+								className=""
 								value=""
 							/>
 							Sunroof
 						</label>
 
-						<label class="">
+						<label className="ml">
 							<input
-								class=""
+								className=""
 								name=""
 								type="checkbox"
 								id=""
@@ -28,9 +28,9 @@ export default function CheckboxInput() {
 							Navigation System
 						</label>
 
-						<label class="">
+						<label className="ml">
 							<input
-								class=""
+								className=""
 								name=""
 								type="checkbox"
 								id=""
@@ -38,9 +38,10 @@ export default function CheckboxInput() {
 							/>
 							Remote Start
 						</label>
-						<label class="">
+
+						<label className="ml">
 							<input
-								class=""
+								className=""
 								name=""
 								type="checkbox"
 								id=""
@@ -48,9 +49,10 @@ export default function CheckboxInput() {
 							/>
 							ABS
 						</label>
-						<label class="">
+
+						<label className="ml">
 							<input
-								class=""
+								className=""
 								name=""
 								type="checkbox"
 								id=""

@@ -1,44 +1,27 @@
 import React from 'react'
 import TextInput from './TextInput'
+import Dropdown from './Dropdown';
 import RadioButton from './RadioButton';
 import CheckboxInput from './CheckboxInput';
+import Textarea from './Textarea';
 import Button from './Button';
 
 export default function Form() {
     return (
-		<div>
-			<div className="">
-				<form>
-
-					
-					<TextInput/>
-					<div>
-						<label for="">Choose a car type:</label>
-
-						<select name="" id="">
-							<option value="hatchback">Hatchback</option>
-							<option value="sedan">Sedan</option>
-							<option value="mpv">MPV</option>
-							<option value="suv">SUV</option>
-							<option value="convertible">Convertible</option>
-							<option value="sport-car">Sport Car</option>
-							<option value="electric">Electric</option>
-						</select>
+		<div className="form-section">
+			{/* <div className="form-description">
+				<h1>Welcome</h1>
+			</div> */}
+			<div className="form-wrap">
+				<form className="form">
+					<div className="input-wrap">
+						<TextInput fieldname="Company Name:"/>
+						<TextInput fieldname="Model Name:"/>
 					</div>
+					<Dropdown/>
 					<RadioButton/>
 					<CheckboxInput/>					
-					<div class="">
-						<label>Car Overview</label>
-						<textarea
-							rows="4"
-							cols="30"
-							class=""
-							maxlength="50"
-							name=""
-							id=""
-							placeholder="Enter car overview here..."
-						></textarea>
-					</div>
+					<Textarea/>	
 					<Button/>					
 				</form>
 			</div>

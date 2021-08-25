@@ -3,15 +3,14 @@ import React from 'react'
 export default function Button() {
     return (
         <div>
-            <div class="">
-                <button type="submit" value="Submit" class="">
+            <div className="btn-wrap">
+                <button type="submit" value="Submit" className="">
                     Submit
                 </button>
                 <button
                     type="button"
                     value="Reset"
-                    class=""
-                >
+                    className="">
                     Reset
                 </button>
 			</div>

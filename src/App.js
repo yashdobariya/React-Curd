@@ -1,7 +1,7 @@
 import '../src/assets/style/app.scss'
-// import Input from './components/Input'
 import Form from "./components/Form"
 import Header from './components/Header';
+import Table from './components/Table';
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
         <div>
             <Header header="Car Management" />
             <Form/>
+            <Table/>
         </div>
 );
 }

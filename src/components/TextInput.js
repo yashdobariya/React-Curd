@@ -1,29 +1,17 @@
 import React from 'react'
 
-export default function TextInput() {
-    return (
-        <div>
-        <div class="">
-            <label for="">Company Name</label>
+export default function TextInput(props) {
+    return (    
+        <div className="form-item wh">
+            <label for="">{props.fieldname}</label>
             <input
             type="text"
-            class=""
+            className=""
             name=""
             id=""
             placeholder="Enter company name"
              />
         </div>
-        <div class="">
-        <label for="">Model Name</label>
-        <input
-            type="text"
-            class=""
-            name=""
-            id=""
-            placeholder="Enter model name"
-        />
-    </div>
-    </div>
         
     )
 }

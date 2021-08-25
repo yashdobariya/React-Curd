@@ -1,0 +1,93 @@
+
+.header{
+    background-color: $light-yellow;
+    margin: 0px;
+    padding: 10px;
+}
+
+.form-section{
+    // width: 100%;
+    // background-color: rgb(236, 152, 152)
+    // background-color:$light-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    .form-description{
+        // background-color:green;
+        // width: 45%;
+        // text-align: center;
+    }
+    .form-wrap{
+        padding: 50px;
+        width: 60%;
+        background-color: $green;
+        color: white;
+        .form{
+
+            .input-wrap{
+                display: flex;
+            }
+            .form-item{
+                padding: 20px;
+                label{
+                    font-size: 20px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                input{
+                    padding: 10px;
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                }
+                select{
+                    font-size: 16px;
+                    padding: 10px;
+                    outline: none;
+                    width: 100%;
+                }
+                textarea{
+                    width: 100%;
+                    resize: vertical;
+                    outline: none;
+                    font-size: 16px;
+                }
+            }
+            .btn-wrap{
+                text-align: left;
+                padding: 20px;
+                button{
+                    padding: 10px 30px;
+                    margin-left:10px;
+                    font-size: 16px;
+                    // background-color: rgb(236, 152, 152);
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.form-data-table{
+    background-color: $light-green;
+    margin-top: 50px;
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        caption{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 50px;
+
+        }
+
+        th{
+            border: 2px solid #262223;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+}

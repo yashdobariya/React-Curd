@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function RadioButton() {
     return (
-        <div>
-            	<div class="">
-						<label class="">Type Of Fule</label>
-						<label class="">
+        <div className="form-item">
+            	<div className="">
+						<label className="">Type Of Car Fule</label>
+						<label className="ml mt">
 							<input
 								type="radio"
-								class=""
+								className=""
 								name=""
 								id=""
 								value=""
@@ -16,20 +16,20 @@ export default function RadioButton() {
 							Petrol
 						</label>
 
-						<label class="">
+						<label className="ml">
 							<input
 								type="radio"
-								class=""
+								className=""
 								name=""
 								id=""
 								value=""
 							/>
 							Diesel
 						</label>
-						<label class="">
+						<label className="ml">
 							<input
 								type="radio"
-								class=""
+								className=""
 								name=""
 								id=""
 								value=""
