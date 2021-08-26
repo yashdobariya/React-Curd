@@ -14,7 +14,6 @@ export default class TextInput extends Component {
     }
     
     render() {
-                
         return (
             <div className="form-item wh">
                 <label htmlFor="">{this.props.fieldname}</label>
