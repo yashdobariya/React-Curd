@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function Table() {
-    return (
-        <div className="form-data-table">
+export default class Table extends Component {
+    render() {
+        return (
+            <div className="form-data-table">
            <table className="table">
                <caption>Form Data</caption>
                <th>Company Name</th>
@@ -12,5 +13,6 @@ export default function Table() {
                <th>Car Features List</th>
             </table>
         </div>
-    )
+        )
+    }
 }

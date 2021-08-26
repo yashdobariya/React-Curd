@@ -1,9 +1,11 @@
-import React from 'react'
 
-export default function CheckboxInput() {
-    return (
-        <div>
-            <div className="form-item">
+import React, { Component } from 'react'
+
+export default class CheckboxInput extends Component {
+	render() {
+		return (
+			<div>
+				<div className="form-item">
 						<label className="">Car Features List</label>
 						<label className="ml mt">
 							<input
@@ -61,7 +63,7 @@ export default function CheckboxInput() {
 							Apple Carplay and Android Auto
 						</label>
 					</div>
-
-        </div>
-    )
+			</div>
+		)
+	}
 }

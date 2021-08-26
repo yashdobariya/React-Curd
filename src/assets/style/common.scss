@@ -3,17 +3,21 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color:$light-green;
+    font-family: regular;
  
     // background-color:rgb(223, 222, 221);
 }
 
 .ml{
-    margin-left: 150px;
-    // display: inline;
+    margin-left: 190px;
+}
+
+.ml--radio{
+    margin-left: 30px;
 }
 
 .mt{
-    margin-top: -33px;
+    margin-top: -38px;
     
 }
 

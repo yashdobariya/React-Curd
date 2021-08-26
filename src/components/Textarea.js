@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function Textarea() {
-    return (
-        <div>
-            <div className="form-item ">
+export default class Textarea extends Component {
+	render() {
+		return (
+		<div>
+        	<div className="form-item ">
 						<label>Car Overview</label>
 						<textarea
 							rows="5"
@@ -14,7 +15,8 @@ export default function Textarea() {
 							id=""
 							placeholder="Enter car overview here..."
 						></textarea>
-					</div>
+				</div>
         </div>
-    )
+		)
+	}
 }

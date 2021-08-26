@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function Dropdown() {
-    return (
-        <div className="form-item">
-			<label for="">Choose a car type:</label>
+export default class Dropdown extends Component {
+	render() {
+		return (
+			<div className="form-item">
+			<label htmlFor="">Choose a car type:</label>
 			<select name="" id="">
 				<option value="hatchback">Hatchback</option>
 				<option value="sedan">Sedan</option>
@@ -14,5 +15,6 @@ export default function Dropdown() {
 				<option value="electric">Electric</option>
 			</select>
         </div>
-    )
+		)
+	}
 }

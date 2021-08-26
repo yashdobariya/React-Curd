@@ -1,14 +1,15 @@
-import React from 'react'
 import TextInput from './TextInput'
 import Dropdown from './Dropdown';
 import RadioButton from './RadioButton';
 import CheckboxInput from './CheckboxInput';
 import Textarea from './Textarea';
 import Button from './Button';
+import React, { Component } from 'react'
 
-export default function Form() {
-    return (
-		<div className="form-section">
+export default class Form extends Component {
+	render() {
+		return (
+			<div className="form-section">
 			{/* <div className="form-description">
 				<h1>Welcome</h1>
 			</div> */}
@@ -26,5 +27,6 @@ export default function Form() {
 				</form>
 			</div>
 		</div>
-	);
+		)
+	}
 }
