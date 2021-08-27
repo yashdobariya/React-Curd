@@ -28,9 +28,9 @@ class App extends Component {
     changeInputField = (value) => {
         console.log(value);
         this.setState({
-            carName: value,
+            // carName: value,
             modelName: value,
-            carType: value,
+            // carType: value,
         })
     }
 
