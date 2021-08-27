@@ -6,7 +6,7 @@ import Textarea from './Textarea';
 import Button from './Button';
 import React from 'react'
 
-export default function Form() {
+export default function Form(props) {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -17,8 +17,17 @@ export default function Form() {
 		<div className="form-wrap">
 			<form className="form" onSubmit={(e) => { handleSubmit(e) }}>
 				<div className="input-wrap">
-					<TextInput fieldname="Company Name:" />
-					<TextInput fieldname="Model Name:" />
+					<TextInput
+						fieldName={"Company Name"}
+						fieldValue={props.carName}
+						changeInputField={props.changeInputField}
+					/>
+						<TextInput
+						fieldName={"Model Name"}
+						fieldValue={props.modelName}
+						changeInputField={props.changeInputField}
+					/>
+					{/* <TextInput fieldname="Model Name:" /> */}
 				</div>
 				<Dropdown />
 				<RadioButton />

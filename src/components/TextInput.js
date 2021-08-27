@@ -1,29 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class TextInput extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { value: "" }
+const TextInput = (props) => {
+    return (
+        <div className="form-item wh">
+            <label htmlFor="">{props.fieldName}</label>
+            <input
+                className="form-item--bigWidth"
+                type="text"
+                value={props.fieldValue}
+                onChange={(e) => props.changeInputField(e.target.value)}
+                placeholder="Enter company name"
+            />
+        </div>
+    )
+};
 
-    }
-
-    handleChange = (event) => {
-        this.setState({ value: event.target.value });
-
-    }
-
-    render() {
-        return (
-            <div className="form-item wh">
-                <label htmlFor="">{this.props.fieldname}</label>
-                <input
-                    className="form-item--bigWidth"
-                    type="text"
-                    value={this.state.value}
-                    onChange={(event) => this.handleChange(event)}
-                    placeholder="Enter company name"
-                />
-            </div>
-        )
-    }
-}
+export default TextInput;

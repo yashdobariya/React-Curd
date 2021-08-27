@@ -8,9 +8,10 @@ export default class Table extends Component {
                     <caption>Form Data</caption>
                     <th>Company Name</th>
                     <th>Model Name</th>
-                    <th>Choose a car type:</th>
+                    <th>Choose a car type</th>
                     <th>Type Of Car Fule</th>
                     <th>Car Features List</th>
+                    <th>Car Overview</th>
                 </table>
             </div>
         )
